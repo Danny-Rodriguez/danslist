@@ -8,10 +8,11 @@ import { fakeListings } from '../fake-data';
   templateUrl: './contact-page.component.html',
   styleUrls: ['./contact-page.component.css'],
 })
+//**undefined if not any */
 export class ContactPageComponent {
   email: string = '';
   message: string = '';
-  listing: Listing | undefined;
+  listing: Listing | any;
 
   constructor(private route: ActivatedRoute, private router: Router) {}
 
