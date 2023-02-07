@@ -15,4 +15,8 @@ export class AppComponent {
   signInClicked(): void {
     this.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
   }
+
+  signOutClicked(): void {
+    this.auth.signOut();
+  }
 }
